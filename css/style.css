@@ -29,6 +29,7 @@ nav ul {
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
+  flex-wrap: wrap; 
 }
 
 nav a {
@@ -187,4 +188,72 @@ footer {
 
 .carrosel img:hover {
   transform: scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+  #picHolder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #picHolder p {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  #foto {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .carrosel img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  body {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  #sobre p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .projeto {
+    padding: 10px;
+  }
+
+  .carrosel img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  #foto {
+    width: 150px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+  
+  .carrosel img {
+    width: 100px;
+  }
 }
