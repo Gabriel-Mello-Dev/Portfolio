@@ -141,6 +141,7 @@ footer {
 }
 
 .typewriter {
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto 20px;
@@ -190,6 +191,7 @@ footer {
   transform: scale(1.05);
 }
 
+/* Responsividade */
 
 @media (max-width: 900px) {
   #picHolder {
@@ -210,7 +212,30 @@ footer {
   .carrosel img {
     width: 150px;
   }
+
+   .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+  }
 }
+
+@media (min-width: 601px) {
+  .typewriter {
+    max-width: 40ch; 
+  }
+}
+
+@media (max-width: 600px) {
+  .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+  }
+}
+
 
 @media (max-width: 600px) {
   nav ul {
@@ -241,6 +266,14 @@ footer {
 
   .carrosel img {
     width: 120px;
+  
+  }
+
+   .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
   }
 }
 
@@ -255,5 +288,12 @@ footer {
   
   .carrosel img {
     width: 100px;
+  }
+
+   .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
   }
 }
