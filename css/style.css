@@ -413,7 +413,7 @@ footer {
 }
 
 .imgs img {
-  width: clamp(20rem, 40vw, 80rem); 
+  width: 40vw; 
   height: auto;                    
   display: block;
   margin: 0 auto;     
