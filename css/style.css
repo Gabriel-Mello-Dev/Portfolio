@@ -26,6 +26,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    max-height: 500rem;
 }
 
 nav ul {
@@ -204,7 +205,7 @@ footer {
     border-right: 3px solid #8A2BE2;
     animation: typing 4s steps(40, end), blink-caret 0.8s step-end infinite;
     max-width: fit-content;
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #F5F5F5;
     text-shadow: 0 0 8px rgba(138, 43, 226, 0.5);
@@ -409,4 +410,20 @@ footer {
         width: 120px;
         height: 120px;
     }
+}
+
+.imgs img {
+  width: clamp(20rem, 40vw, 80rem); 
+  height: auto;                    
+  display: block;
+  margin: 0 auto;     
+      transition: ease-in-out 1s;
+              
+}
+
+.imgs img:hover {
+
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+
 }
