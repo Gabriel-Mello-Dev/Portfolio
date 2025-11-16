@@ -1,0 +1,21 @@
+.logo {
+  width: 64px;
+  height: 64px;
+  animation: none;
+}
+
+.logo:hover {
+  animation: upThenRotate 0.8s ease forwards;
+}
+
+@keyframes upThenRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-10px) rotate(0deg); /* sobe */
+  }
+  100% {
+    transform: translateY(-10px) rotate(360deg); /* gira */
+  }
+}
