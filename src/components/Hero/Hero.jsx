@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Sobre mim</h3>
             <p className="text-slate-300 leading-relaxed">
-              Sou Gabriel Mello, desenvolvedor front‑end e apaixonado por
+              Sou Gabriel Mello, desenvolvedor Full Stack e apaixonado por
               tecnologias 3D na web. Trabalho com criação de aplicações web,
               mobile e desktop, priorizando experiência do usuário, performance
               e soluções escaláveis. Tenho experiência com React, React Native,
@@ -159,14 +159,23 @@ const Hero = () => {
             <div className="p-6 bg-slate-800/40 rounded-xl border border-slate-700">
               <h4 className="font-semibold">Animus Reality</h4>
               <p className="text-sm text-slate-400">
-                Desenvolvedor de software júnior
+                Desenvolvedor Full Stack estagiário
               </p>
               <p className="mt-3 text-slate-300 text-sm">
-                (set/2025 — presente) Desenvolvimento de soluções web, mobile e
-                desktop, com integrações Firebase (Storage, Firestore, Hosting,
-                Cloud Functions). Desenvolvimento de autenticação, gestão de
-                dados e visualizações dinâmicas. Trabalho com Electron.js e
-                WebXR.
+                set/2025 — presente | Ourinhos, SP Atuação como desenvolvedor
+                Full Stack, criando soluções web, mobile e desktop.
+                Desenvolvimento de sites e sistemas web com dashboards
+                interativos utilizando Next.js e React, com estilização moderna
+                e responsiva através do Tailwind CSS. Criação de aplicações
+                mobile com Flutter e aplicações desktop com Electron.js,
+                garantindo integração entre diferentes plataformas. Experiência
+                com Firebase (Authentication, Firestore, Storage, Hosting e
+                Cloud Functions) para autenticação, gerenciamento de dados e
+                backend serverless. Realização de estudos, consumo e
+                implementação de APIs, integração frontend–backend, construção
+                de visualizações dinâmicas de dados e desenvolvimento de
+                experiências 3D para web (WebXR). Implementação de pipelines de
+                CI/CD para automação de build, testes e deploy.
               </p>
             </div>
 
