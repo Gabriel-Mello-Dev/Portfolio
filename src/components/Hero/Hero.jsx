@@ -184,9 +184,16 @@ const Hero = () => {
               <h4 className="font-semibold">UNESP — Campus Ourinhos</h4>
               <p className="text-sm text-slate-400">Pesquisador PIBIC Jr.</p>
               <p className="mt-3 text-slate-300 text-sm">
-                (fev/2025 — presente) Projetos de pesquisa científica, análise
-                de dados e transição para processamento de imagens de satélite
-                com Google Earth Engine.
+                fev/2025 — presente | Ourinhos, SP (híbrido) Atuação em análise
+                e interpretação de dados, com foco em processamento de
+                informações geoespaciais. Utilização do Google Earth Engine
+                (GEE) para análise de imagens de satélite, extração de métricas
+                e geração de insights a partir de grandes volumes de dados.
+                Gerenciamento de projetos e recursos na Google Cloud Platform
+                (GCP), incluindo organização de ambientes, controle de ativos e
+                integração com o GEE para execução e escalabilidade das
+                análises. Aplicação dos dados processados em soluções digitais,
+                com foco em integração futura com aplicações mobile.
               </p>
             </div>
 
