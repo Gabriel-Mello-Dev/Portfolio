@@ -204,9 +204,15 @@ const Hero = () => {
                 Desenvolvedor mobile & web
               </p>
               <p className="mt-3 text-slate-300 text-sm">
-                (mar/2025 — presente / jan/2024 — mai/2025) Desenvolvimento de
-                projetos próprios e soluções sob demanda, aplicando boas
-                práticas em front‑end, mobile e integração com APIs.
+                (mar/2025 — presente) Desenvolvimento de Desenvolvimento de
+                aplicações mobile autorais, com foco em boas práticas de UX/UI,
+                arquitetura de aplicações e desempenho. Integração com APIs,
+                gerenciamento de dados e implementação de funcionalidades
+                voltadas à escalabilidade e usabilidade. Criação de projetos web
+                autorais, com foco em desenvolvimento front-end utilizando
+                React, além de stacks e ferramentas modernas do ecossistema
+                JavaScript. Implementação de interfaces responsivas, componentes
+                reutilizáveis e integração com serviços e APIs.
               </p>
             </div>
           </div>
