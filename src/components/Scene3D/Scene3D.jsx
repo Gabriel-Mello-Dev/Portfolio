@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows } from '@react-three/drei';
-import * as THREE from 'three';
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, Environment, ContactShadows } from "@react-three/drei";
+import * as THREE from "three";
 // Floating animated cube component
 const FloatingCube = () => {
   const meshRef = useRef();
@@ -54,7 +54,7 @@ const FloatingSpheres = () => {
         position={[
           Math.cos((i / 5) * Math.PI * 2) * 2,
           1.5,
-          Math.sin((i / 5) * Math.PI * 2) * 2
+          Math.sin((i / 5) * Math.PI * 2) * 2,
         ]}
         scale={0.3}
       >
@@ -89,7 +89,7 @@ const Ground = () => {
 // Main 3D scene component
 const Scene3D = () => {
   return (
-    <div style={{ width: '100%', height: '80vh'}}>
+    <div style={{ width: "100%", height: "80vh" }}>
       <Canvas
         shadows
         camera={{ position: [0, 0, 5], fov: 50 }}
@@ -106,7 +106,11 @@ const Scene3D = () => {
           shadow-mapSize-width={2048}
           shadow-mapSize-height={2048}
         />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#60a5fa" />
+        <pointLight
+          position={[-10, -10, -10]}
+          intensity={0.5}
+          color="#60a5fa"
+        />
 
         {/* Environment map for reflections */}
         <Environment preset="city" />

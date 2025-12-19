@@ -162,7 +162,7 @@ const Hero = () => {
                 Desenvolvedor Full Stack estagiário
               </p>
               <p className="mt-3 text-slate-300 text-sm">
-                set/2025 — presente | Ourinhos, SP Atuação como desenvolvedor
+                set/2025 — dez/2025 | Ourinhos, SP Atuação como desenvolvedor
                 Full Stack, criando soluções web, mobile e desktop.
                 Desenvolvimento de sites e sistemas web com dashboards
                 interativos utilizando Next.js e React, com estilização moderna
