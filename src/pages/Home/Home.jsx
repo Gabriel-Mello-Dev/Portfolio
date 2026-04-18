@@ -40,7 +40,7 @@ const Home = () => {
 
           <ProjectCard
             index={1}
-            title="Adaptil"
+            title="Algoritmo de detecção de pivôs utilizando inteligência artificial e Google Earth Engine"
             image="/imgs/pivoDetection.jpeg"
             description="Pesquisa desenvolvida na UNESP focada na detecção automatizada de pivôs de irrigação com IA, utilizando JavaScript no Google Earth Engine e treinamento de modelos via Roboflow."
             tech={[
