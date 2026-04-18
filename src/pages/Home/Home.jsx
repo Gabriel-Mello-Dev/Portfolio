@@ -30,12 +30,28 @@ const Home = () => {
           />
           <ProjectCard
             index={1}
-            title="HostDocs"
-            image="/imgs/HostDocs.png"
-            description="Hosting de documento e visualização destes documentos de forma online e hospedada"
-            tech={["Php", "Sql", "Html", "Css", "Tailwind"]}
-            live="https://hostdocs.byethost17.com/?i=1"
-            github="https://github.com/Gabriel-Mello-Dev/HostDocs"
+            title="Adaptil"
+            image="/imgs/adaptil.jpeg"
+            description="Adaptador de conteúdos didáticos personalizados conforme os interesses e necessidades dos alunos."
+            tech={["Next.Js", "Gemini Api", "React", "Css", "Tailwind"]}
+            live="https://adaptil.vercel.app/"
+            github="https://github.com/Gabriel-Mello-Dev/Adaptil"
+          />
+
+          <ProjectCard
+            index={1}
+            title="Adaptil"
+            image="/imgs/pivoDetection.jpeg"
+            description="Pesquisa desenvolvida na UNESP focada na detecção automatizada de pivôs de irrigação com IA, utilizando JavaScript no Google Earth Engine e treinamento de modelos via Roboflow."
+            tech={[
+              "JavaScript",
+              "Google Earth Engine",
+              "Roboflow",
+              "IA",
+              "Python",
+            ]}
+            live="https://app.roboflow.com/gabriels-workspace-b9aqp/deteccao-de-pivos/1"
+            github="https://code.earthengine.google.com/765c6bf4d02e44c9e40a840b7ba3952d"
           />
         </div>
       </section>

@@ -157,12 +157,12 @@ const Hero = () => {
           <div className="grid gap-6 md:grid-cols-3">
             {/* Animus */}
             <div className="p-6 bg-slate-800/40 rounded-xl border border-slate-700">
-              <h4 className="font-semibold">Animus Reality</h4>
+              <h4 className="font-semibold">AER Company</h4>
               <p className="text-sm text-slate-400">
                 Desenvolvedor Full Stack estagiário
               </p>
               <p className="mt-3 text-slate-300 text-sm">
-                set/2025 — dez/2025 | Ourinhos, SP Atuação como desenvolvedor
+                set/2025 - dez/2025 | Ourinhos, SP Atuação como desenvolvedor
                 Full Stack, criando soluções web, mobile e desktop.
                 Desenvolvimento de sites e sistemas web com dashboards
                 interativos utilizando Next.js e React, com estilização moderna
@@ -181,10 +181,12 @@ const Hero = () => {
 
             {/* UNESP */}
             <div className="p-6 bg-slate-800/40 rounded-xl border border-slate-700">
-              <h4 className="font-semibold">UNESP — Campus Ourinhos</h4>
-              <p className="text-sm text-slate-400">Pesquisador PIBIC Jr.</p>
+              <h4 className="font-semibold">UNESP - Campus Ourinhos</h4>
+              <p className="text-sm text-slate-400">
+                Pesquisador Junior- Sensoriamento Remoto.
+              </p>
               <p className="mt-3 text-slate-300 text-sm">
-                fev/2025 — presente | Ourinhos, SP (híbrido) Atuação em análise
+                fev/2025 - presente | Ourinhos, SP (híbrido) Atuação em análise
                 e interpretação de dados, com foco em processamento de
                 informações geoespaciais. Utilização do Google Earth Engine
                 (GEE) para análise de imagens de satélite, extração de métricas
@@ -204,7 +206,7 @@ const Hero = () => {
                 Desenvolvedor mobile & web
               </p>
               <p className="mt-3 text-slate-300 text-sm">
-                (mar/2025 — presente) Desenvolvimento de Desenvolvimento de
+                (mar/2025 - presente) Desenvolvimento de Desenvolvimento de
                 aplicações mobile autorais, com foco em boas práticas de UX/UI,
                 arquitetura de aplicações e desempenho. Integração com APIs,
                 gerenciamento de dados e implementação de funcionalidades
