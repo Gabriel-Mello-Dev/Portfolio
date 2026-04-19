@@ -1,41 +1,63 @@
 import { Outlet } from "react-router-dom";
-import { Highlighter } from "../../components/ui/highlighter";
 import { HashLink } from "react-router-hash-link";
-import style from "./LayoutPadrao.module.css"
 
 function LayoutPadrao() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div className="min-h-screen bg-slate-950 text-slate-100">
+      
       {/* NAVBAR */}
-      <header className="w-full py-5 px-8 flex justify-between items-center bg-white shadow-sm">
-   <div className="flex items-center">
-  <div className="flex flex-col">
-    <h1 className="text-xl font-bold">Gabriel De Oliveira Mello</h1>
+      <header className="fixed top-0 left-0 w-full h-16 px-6 md:px-10 flex items-center justify-between 
+      bg-slate-900/70 backdrop-blur-md border-b border-slate-800 z-50">
+        
+        {/* LEFT */}
+        <div className="flex items-center gap-3">
+          <img
+            src="/react.png"
+            className="w-8 h-8 opacity-80"
+          />
 
-    <Highlighter action="underline" color="#9900ffff">
-      desenvolvedor de software Jr
-    </Highlighter>
-  </div>
+          <div className="leading-tight">
+            <h1 className="text-sm md:text-base font-semibold tracking-tight">
+              Gabriel Mello
+            </h1>
+            <p className="text-xs text-slate-400">
+              Full Stack Developer
+            </p>
+          </div>
+        </div>
 
-  <img src="/react.png" className={style.logo} />
-</div>
-
-        <nav className="flex gap-6 text-sm font-medium">
-          <HashLink smooth to="#about" className="hover:text-blue-600">
+        {/* NAV */}
+        <nav className="flex items-center gap-6 text-sm text-slate-400">
+          <HashLink
+            smooth
+            to="#about"
+            className="hover:text-white transition"
+          >
             Sobre
           </HashLink>
 
-          <HashLink smooth to="#projects" className="hover:text-blue-600">
+          <HashLink
+            smooth
+            to="#projects"
+            className="hover:text-white transition"
+          >
             Projetos
           </HashLink>
 
-          <HashLink smooth to="#3dweb" className="hover:text-blue-600">
-            Experiencias 3D
+          <HashLink
+            smooth
+            to="#3dweb"
+            className="hover:text-white transition"
+          >
+            3D
           </HashLink>
         </nav>
       </header>
 
-      <Outlet />
+      {/* OFFSET (pra não esconder conteúdo atrás da navbar fixa) */}
+      <div className="pt-16">
+        <Outlet />
+      </div>
     </div>
   );
 }
