@@ -31,7 +31,7 @@ const Home = () => {
               image="/imgs/panda.png"
               description="Experiência interativa voltada à redução de ansiedade no uso de telas, com foco em usabilidade e design envolvente."
               tech={["React", "Axios", "API", "Vite"]}
-              live="https://slp-sleep-like-a-panda.vercel.app/"
+              live="https://sleep-like-a-panda.vercel.app/"
               github="https://github.com/Gabriel-ARy7/Slp-Sleep-Like-a-Panda-"
             />
 
