@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-950 text-slate-100">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
+      <section className="relative  flex items-center justify-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,23 +54,24 @@ const Hero = () => {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-12">
           {/* TEXTO */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-8">
             <div>
               <h3 className="text-2xl font-semibold">Sobre mim</h3>
               <p className="mt-3 text-slate-400 leading-relaxed">
-                Desenvolvedor Full Stack com foco em aplicações web, mobile e
-                desktop. Trabalho com React, React Native e TypeScript,
-                priorizando performance, experiência do usuário e
-                escalabilidade.
+                Desenvolvedor Full Stack com experiência na criação de
+                aplicações modernas para web. Atuo em todas as etapas do
+                desenvolvimento, desde a modelagem de banco de dados e
+                arquitetura da aplicação até a construção de interfaces
+                responsivas e integrações com APIs. Tenho como prioridade
+                desenvolver soluções escaláveis, seguras, performáticas e com
+                excelente experiência para o usuário.
               </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-medium">Pesquisa (UNESP)</h4>
-              <p className="mt-2 text-slate-400 leading-relaxed">
-                Atuo com análise de dados geoespaciais utilizando Google Earth
-                Engine, processando imagens de satélite e explorando aplicações
-                com inteligência artificial.
+              <p className="mt-4 text-slate-400 leading-relaxed">
+                Tenho experiência no desenvolvimento de dashboards analíticos,
+                sistemas de autenticação, integrações com APIs, modelagem de
+                banco de dados, visualização de métricas e implementação de
+                funcionalidades voltadas para ambientes corporativos, sempre
+                seguindo boas práticas de engenharia de software e código limpo.
               </p>
             </div>
           </div>
@@ -87,16 +88,25 @@ const Hero = () => {
             <div className="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
               <h4 className="font-semibold">Skills</h4>
               <div className="mt-3 flex flex-wrap gap-2">
-                {["React", "React Native", "Firebase", "Electron", "WebXR"].map(
-                  (s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1 text-sm bg-slate-700/60 rounded-full"
-                    >
-                      {s}
-                    </span>
-                  ),
-                )}
+                {[
+                  "Next.js",
+                  "TypeScript",
+                  "React",
+                  "Supabase",
+                  "PostgreSQL",
+                  "Redis",
+                  "Tailwind CSS",
+                  "UX",
+                  "REST APIs",
+                  "Git",
+                ].map((s) => (
+                  <span
+                    key={s}
+                    className="px-3 py-1 text-sm bg-slate-700/60 rounded-full"
+                  >
+                    {s}
+                  </span>
+                ))}
               </div>
             </div>
           </aside>
@@ -109,6 +119,19 @@ const Hero = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
+              {
+                title: "Avanço Marketing",
+                role: "Full Stack Developer",
+                period: "jun/2026 - atual",
+                desc: "Desenvolvimento de uma plataforma SaaS para gestão de marketing e vendas, atuando na implementação de dashboards, funil de vendas configurável, integrações com Supabase e otimização da arquitetura, com foco em escalabilidade, segurança, performance e experiência do usuário.",
+                tech: [
+                  "Next.js",
+                  "TypeScript",
+                  "Supabase",
+                  "PostgreSQL",
+                  "TailwindCSS",
+                ],
+              },
               {
                 title: "AER Company",
                 role: "Full Stack (Estágio)",
@@ -125,10 +148,15 @@ const Hero = () => {
               },
               {
                 title: "FragmaCore",
-                role: "Dev Mobile & Web",
+                role: "Desenvolvedor Back-end",
                 period: "mar/2025 - atual",
-                desc: "Participação em projetos colaborativos voltados ao desenvolvimento de aplicações modernas. Foco em UX/UI, arquitetura de aplicações e integração com APIs, criando soluções escaláveis e com boa experiência para o usuário final.",
-                tech: ["React", "React Native", "APIs", "UX/UI"],
+                desc: "Desenvolvimento de projetos colaborativos e autônomos em equipe, voltados ao aprendizado e à criação de aplicações para o curso técnico e faculdade. Atuação no desenvolvimento de APIs, comunicação em tempo real e arquitetura de back-end, com foco em escalabilidade, performance e boas práticas.",
+                tech: [
+                  "Node.js",
+                  "TypeScript",
+                  "WebSockets",
+                  "REST APIs",
+                ],
               },
             ].map((item, i) => (
               <div
