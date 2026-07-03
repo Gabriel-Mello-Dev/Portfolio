@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
@@ -6,44 +7,48 @@ const Hero = () => {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-950 text-slate-100">
       {/* HERO */}
-      <section className="relative  flex items-center justify-center px-6">
+      <section className="relative flex items-center justify-center px-6 overflow-hidden">
+        {/* fundo sutil animado */}
+        <div className="absolute inset-0 bg-indigo-500/5 blur-3xl animate-pulse" />
+
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl w-full text-center"
+          className="max-w-5xl w-full text-center relative z-10 transition-transform duration-500 hover:scale-[1.01]"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight transition-colors hover:text-indigo-300">
             Gabriel <span className="text-indigo-400">Mello</span>
           </h1>
 
-          <p className="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto transition-opacity duration-300 hover:opacity-90">
             Desenvolvedor Full Stack focado em aplicações modernas, experiências
             3D e soluções multiplataforma.
           </p>
 
-          <div className="mt-8 flex justify-center">
-            <img
+<div className="mt-8 flex justify-center overflow-visible transition-transform duration-300 hover:scale-[1.01]">            <img
               src="/pfp.jpg"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border border-slate-700 shadow-lg"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border border-slate-700 shadow-lg transition-all duration-500 hover:scale-105 hover:shadow-indigo-500/20"
             />
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <a className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg font-medium transition">
+            <a
+              className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg font-medium transition-all duration-300 hover:scale-105 active:scale-95"
+            >
               <HashLink
                 smooth
                 to="#projects"
                 className="hover:text-white transition"
               >
                 Ver Projetos
-              </HashLink>{" "}
+              </HashLink>
             </a>
 
             <a
               href="https://www.linkedin.com/in/gabriel-de-oliveira-mello-dev-researcher/"
               target="_blank"
-              className="px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-lg transition"
+              className="px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               LinkedIn
             </a>
@@ -51,13 +56,16 @@ const Hero = () => {
         </motion.div>
       </section>
 
+      {/* SOBRE */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-12">
-          {/* TEXTO */}
           <div className="lg:col-span-2 space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold">Sobre mim</h3>
-              <p className="mt-3 text-slate-400 leading-relaxed">
+            <div className="transition-all duration-300 hover:translate-y-[-2px]">
+              <h3 className="text-2xl font-semibold transition-colors hover:text-indigo-400">
+                Sobre mim
+              </h3>
+
+              <p className="mt-3 text-slate-400 leading-relaxed transition-colors hover:text-slate-300">
                 Desenvolvedor Full Stack com experiência na criação de
                 aplicações modernas para web. Atuo em todas as etapas do
                 desenvolvimento, desde a modelagem de banco de dados e
@@ -66,7 +74,8 @@ const Hero = () => {
                 desenvolver soluções escaláveis, seguras, performáticas e com
                 excelente experiência para o usuário.
               </p>
-              <p className="mt-4 text-slate-400 leading-relaxed">
+
+              <p className="mt-4 text-slate-400 leading-relaxed transition-colors hover:text-slate-300">
                 Tenho experiência no desenvolvimento de dashboards analíticos,
                 sistemas de autenticação, integrações com APIs, modelagem de
                 banco de dados, visualização de métricas e implementação de
@@ -78,15 +87,16 @@ const Hero = () => {
 
           {/* SIDEBAR */}
           <aside className="space-y-6">
-            <div className="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+            <div className="bg-slate-800/40 p-6 rounded-xl border border-slate-700 transition-all duration-300 hover:border-indigo-500 hover:-translate-y-1">
               <h4 className="font-semibold">Contato</h4>
-              <p className="mt-2 text-slate-400 text-sm">
+              <p className="mt-2 text-slate-400 text-sm transition-colors hover:text-slate-300">
                 gabrielmello8986@gmail.com
               </p>
             </div>
 
-            <div className="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+            <div className="bg-slate-800/40 p-6 rounded-xl border border-slate-700 transition-all duration-300 hover:border-indigo-500 hover:-translate-y-1">
               <h4 className="font-semibold">Skills</h4>
+
               <div className="mt-3 flex flex-wrap gap-2">
                 {[
                   "Next.js",
@@ -102,7 +112,7 @@ const Hero = () => {
                 ].map((s) => (
                   <span
                     key={s}
-                    className="px-3 py-1 text-sm bg-slate-700/60 rounded-full"
+                    className="px-3 py-1 text-sm bg-slate-700/60 rounded-full transition-all duration-300 hover:bg-indigo-500/20 hover:text-indigo-300 hover:scale-105"
                   >
                     {s}
                   </span>
@@ -113,11 +123,14 @@ const Hero = () => {
         </div>
       </section>
 
+      {/* EXPERIÊNCIA */}
       <section className="py-20 px-6 border-t border-slate-800">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-semibold mb-10">Experiência</h3>
+          <h3 className="text-2xl font-semibold mb-10 transition-colors hover:text-indigo-400">
+            Experiência
+          </h3>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 group">
             {[
               {
                 title: "Avanço Marketing",
@@ -156,7 +169,7 @@ const Hero = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="p-6 bg-slate-800/40 rounded-xl border border-slate-700 hover:border-indigo-500 transition hover:-translate-y-1"
+                className="p-6 bg-slate-800/40 rounded-xl border border-slate-700 transition-all duration-300 hover:border-indigo-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-indigo-500/10 group-hover:opacity-70 hover:!opacity-100"
               >
                 <h4 className="font-semibold">{item.title}</h4>
                 <p className="text-sm text-slate-400">{item.role}</p>
@@ -170,7 +183,7 @@ const Hero = () => {
                   {item.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 text-xs bg-slate-700/60 rounded-md text-slate-300"
+                      className="px-2 py-1 text-xs bg-slate-700/60 rounded-md transition hover:bg-indigo-500/20 hover:text-indigo-300"
                     >
                       {tech}
                     </span>
@@ -182,10 +195,10 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* RODAPÉ SIMPLES */}
-      <footer className="py-8 px-6 md:px-12 text-center text-sm text-slate-400">
+      {/* FOOTER */}
+      <footer className="py-8 px-6 text-center text-sm text-slate-400 transition hover:text-slate-300">
         © {new Date().getFullYear()} Gabriel De Oliveira Mello - Dev &
-        researcher.
+        Researcher.
       </footer>
     </main>
   );
