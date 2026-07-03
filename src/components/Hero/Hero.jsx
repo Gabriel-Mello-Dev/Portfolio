@@ -166,6 +166,7 @@ const Hero = () => {
                 <h4 className="font-semibold">{item.title}</h4>
                 <p className="text-sm text-slate-400">{item.role}</p>
                 <p className="text-xs text-slate-500 mt-1">{item.period}</p>
+                
 
                 <p className="mt-3 text-sm text-slate-300 leading-relaxed">
                   {item.desc}
