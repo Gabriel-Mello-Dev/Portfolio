@@ -140,23 +140,18 @@ const Hero = () => {
                 tech: ["React", "Next.js", "Flutter", "Firebase", "CI/CD"],
               },
               {
-                title: "UNESP",
-                role: "Pesquisador Júnior",
-                period: "fev/2025 - atual",
-                desc: "Desenvolvimento de análises geoespaciais utilizando Google Earth Engine, com processamento de imagens de satélite e extração de métricas. Atuação com grandes volumes de dados, geração de insights e integração com serviços da Google Cloud Platform para escalabilidade.",
-                tech: ["GEE", "Roboflow", "Data Analysis", "Remote Sensing"],
-              },
-              {
                 title: "FragmaCore",
                 role: "Desenvolvedor Back-end",
                 period: "mar/2025 - atual",
                 desc: "Desenvolvimento de projetos colaborativos e autônomos em equipe, voltados ao aprendizado e à criação de aplicações para o curso técnico e faculdade. Atuação no desenvolvimento de APIs, comunicação em tempo real e arquitetura de back-end, com foco em escalabilidade, performance e boas práticas.",
-                tech: [
-                  "Node.js",
-                  "TypeScript",
-                  "WebSockets",
-                  "REST APIs",
-                ],
+                tech: ["Node.js", "TypeScript", "WebSockets", "REST APIs"],
+              },
+              {
+                title: "UNESP",
+                role: "Pesquisador Júnior",
+                period: "fev/2025 - dez/2026",
+                desc: "Desenvolvimento de análises geoespaciais utilizando Google Earth Engine, com processamento de imagens de satélite e extração de métricas. Atuação com grandes volumes de dados, geração de insights e integração com serviços da Google Cloud Platform para escalabilidade.",
+                tech: ["GEE", "Roboflow", "Data Analysis", "Remote Sensing"],
               },
             ].map((item, i) => (
               <div
@@ -166,7 +161,6 @@ const Hero = () => {
                 <h4 className="font-semibold">{item.title}</h4>
                 <p className="text-sm text-slate-400">{item.role}</p>
                 <p className="text-xs text-slate-500 mt-1">{item.period}</p>
-                
 
                 <p className="mt-3 text-sm text-slate-300 leading-relaxed">
                   {item.desc}
