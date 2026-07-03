@@ -123,7 +123,7 @@ const Hero = () => {
                 title: "Avanço Marketing",
                 role: "Full Stack Developer",
                 period: "jun/2026 - atual",
-                desc: "Desenvolvimento de uma plataforma SaaS para gestão de marketing e vendas, atuando na implementação de dashboards, funil de vendas configurável, integrações com Supabase e otimização da arquitetura, com foco em escalabilidade, segurança, performance e experiência do usuário.",
+                desc: "Desenvolvimento de uma plataforma para gestão de marketing e vendas, atuando na implementação de dashboards,integrações com Supabase e otimização da arquitetura, com foco em escalabilidade, segurança, performance e experiência do usuário.",
                 tech: [
                   "Next.js",
                   "TypeScript",
